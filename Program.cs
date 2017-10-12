@@ -22,7 +22,7 @@ namespace Bankomat
 
         {
 
-            float castka, castka2;
+            float castka, zbytek;
 
             float petitisicovka = 5000;
 
@@ -56,45 +56,45 @@ namespace Bankomat
 
             castka = float.Parse(Console.ReadLine());
 
-            castka2 = castka;
+            zbytek = castka;
 
 
 
-            castka =castka2 % petitisicovka;
+            zbytek =castka % petitisicovka;
 
-            a = (castka2 - castka) / petitisicovka;
+            a = (castka - zbytek) / petitisicovka;
 
-            castka2 = castka;
+            castka = zbytek;
 
-            castka = castka2 % dvoutisicovka;
+            zbytek = castka % dvoutisicovka;
 
-            b = (castka2 - castka) / dvoutisicovka;
+            b = (castka - zbytek) / dvoutisicovka;
 
-            castka2 = castka;
+            castka = zbytek;
 
-            castka = castka2 % tisicovka;
+            zbytek = castka % tisicovka;
 
-            c = (castka2 - castka) / tisicovka;
+            c = (castka - zbytek) / tisicovka;
 
-            castka2 = castka;
+            castka = zbytek;
 
-            castka = castka2 % petistovka;
+            zbytek = castka % petistovka;
 
-            d = (castka2 - castka) / petistovka;
+            d = (castka - zbytek) / petistovka;
 
-            castka2 = castka;
+            castka = zbytek;
 
-            castka = castka2 % dvoustovka;
+            zbytek = castka % dvoustovka;
 
-            e = (castka2 - castka) / dvoustovka;
+            e = (castka - zbytek) / dvoustovka;
 
-            castka2 = castka;
+            castka = zbytek;
 
-            castka = castka2 % stovka;
+            zbytek = castka % stovka;
 
-            f = (castka2 - castka) / stovka;
+            f = (castka - zbytek) / stovka;
 
-            castka2 = castka;
+            castka = zbytek;
 
 
 
